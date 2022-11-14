@@ -64,5 +64,17 @@ ul {
 }
 
 .padding {
-    padding: 20px;
+    padding-bottom: 15px;
+}
+
+.shorthand {
+    background-color: #444;
+    padding: 6px 12px 18px 24px;
+}
+
+
+.shorthand-2 {
+    background-color: #555;
+    padding: 10px 20px;
+    text-align: center;
 }
