@@ -1,4 +1,4 @@
-body {
+ body {
     padding: 0;
     height: 0;
 }
@@ -77,4 +77,304 @@ ul {
     background-color: #555;
     padding: 10px 20px;
     text-align: center;
+}
+
+
+.without-border-box {
+    background-color: #444;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box {
+    background-color: #666;
+    color: #fff;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.border {
+    border: 5px solid red   ;
+    padding: 10px;
+}
+
+.border-2 {
+    border-bottom: 2px dotted #931;
+    padding: 25px;
+}
+
+.border-left {
+    border-left: 3px solid red;
+    padding: 25px;
+    background-color: #222;
+}
+
+.border-bottom {
+    border-bottom: 5px double #399;
+    padding: 25px;
+    background-color: #222;
+}
+
+.rouded-p {
+    border: 4px solid blue;
+    background-color: #111;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+
+.rouded-p-2 {
+    background-color: #111;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+    border-radius: 25px;
+
+}
+
+.margin {
+    margin: 10px;
+    background-color: #222;
+}
+
+.margin-top {
+    margin-top: 50px;
+    background-color: #444;
+    padding: 10px;
+
+}
+
+
+.margin-shorthand {
+    background-color: #666;
+    margin: 5px 10px 15px 20px;
+
+}
+
+
+.box-model {
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid #845;
+    border-radius: 7px;
+    width: 200px;
+    height: 100px;
+}
+
+/* Desafio 3 */
+
+.box-model2 {
+    width: 300;
+    height: 300;
+    border: 2px  solid yellow;
+    border-radius: 5px;
+    outline: 2px solid red;
+    padding: 15px;
+    margin: 15px;
+    background-color: #123;
+}
+
+.box-model2 h2 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: none;
+
+} 
+
+.box-model2 p {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    border: none;
+    background-color: #845;
+    border-radius: 20px;
+}
+
+
+.text-aligned {
+    text-align: right;
+    padding: 15px;
+}
+
+
+.container-center {
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+.container-center h2 {
+    border-bottom: 1px solid red;
+
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+.line-trough {
+    text-decoration: line-through;
+}
+
+
+.remove-underline {
+    text-decoration: none;
+}
+
+/* Uppsecase */
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+    letter-spacing: 5px;
+}
+
+/*  Font Size */
+
+.small {
+    font-size: 6px;
+    
+}
+
+.big {
+    font-size: 38px;
+    background-color: #555;
+}
+
+/* Display Block */
+.inline-box {
+    width: 50px;
+    height: 50px;
+    background-color: #4f8;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    display: block;
+    background-color: #333;
+    margin: 10px;
+}
+
+.invisible {
+    display: none;
+}
+
+/* Posições dos Elementos */
+
+/* Static */
+.static {
+    position: static;
+    background-color: #391;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+/* Relative */
+.relative {
+    position: relative;
+    background-color: #224;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 20px;
+    left: 20px;
+}
+
+/* Absolute */
+.absolute {
+    position: absolute;
+    background-color: #964;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+}
+
+/* Relative e Absolute */
+.relative-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+
+}
+
+.absolute-1,
+.absolute-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #422;
+    position: absolute;
+}
+
+.absolute-1 {
+    top:  10px;
+    left: 10px;
+}
+
+.absolute-2 {
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/* Fixed */
+
+.fixed {
+    width: 100px;
+    height: 200px;
+    border: 1px solid blue;
+    background-color: #851;
+    position: fixed;
+    top: 50px;
+    left: 250px;
+}
+/* sticky */
+.sticky {
+    width: 100px;
+    height: 200px;
+    border: 1px solid #994;
+    background-color: green;
+    position: sticky;
+    top:  10px;
+
+}
+
+/* z-index sera organizao pelo numero maior na frente*/ 
+
+.absolute-3,
+.absolute-4,
+.absolute-5 {
+    width: 50px;
+    height: 50px;
+    background-color: #123;
+    position: absolute;
+}
+
+.absolute-3 {
+    top: 0;
+    left: 0;
+    background-color: yellow;
+    z-index: 4;
+}
+
+.absolute-4 {
+    top:  10px;
+    left: 10px;
+    background-color: rgb(255, 24, 24);
+    z-index: 5;
+}
+.absolute-5 {
+    top:  40px;
+    left: 40px;
+    background-color: rgb(18, 6, 177);
+    z-index: 1;
 }
