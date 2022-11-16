@@ -104,3 +104,108 @@ body {
 .stretch .bx{
     height: auto;
 }
+
+/* gap */
+
+.gap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid green;
+    gap: 10px;
+}
+
+.gap .bx {
+    width: 33%;
+}
+
+/* order */
+
+.order {
+    display: flex;
+}
+
+#one {
+    order: 1;
+}
+
+#two {
+    order: 2;
+}
+
+#three {
+    order: 3;
+}
+
+/* grow */
+.grow {
+    display: flex;
+}
+
+.grow .bx {
+    flex: 1;
+}
+
+.grow .big {
+    flex: 3;
+}
+
+/* basis */
+.basis {
+    display: flex;
+}
+
+.basis .bx {
+    flex-basis: 20px;
+}
+
+.basis .big {
+    flex-grow: 1;
+}
+
+/* shrink redução de acordo o tamanho da tela */
+
+.shrink {
+    display: flex;
+}
+
+.shrink .bx {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 250px;
+    width: auto;
+}
+
+.shrink .small {
+    flex-shrink: 2;
+}
+
+/* flex shorthand */
+
+.shorthand {
+    display: flex;
+    gap: 1rem;
+}
+
+.shorthand .bx {
+    widows: auto;
+    flex: 1 1 50px;
+}
+
+.shorthand .diferente {
+    flex: 3 1 400px;
+
+}
+
+/* Auto alinhamento  para alinha itens de forma individual do flex*/
+
+.auto-align {
+    height: 300px;
+    display: flex;
+    align-items: flex-end;
+    border: 1px solid purple;
+}
+
+.auto-align .diferente {
+    align-self: center;
+}
